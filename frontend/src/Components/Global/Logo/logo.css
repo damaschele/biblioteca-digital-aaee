@@ -1,0 +1,28 @@
+.dashboard-logo{
+    display: flex;
+    width: auto;
+    padding: 15px;
+    gap: 20;
+}
+
+.dashboard-logo .logo1{
+   text-decoration: none; 
+}
+
+.dashboard-logo .logo1 span {
+    font-size: 26px;
+    font-weight: 600;
+    padding-left: 1rem;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    color: var(--color-black);
+}
+
+.dashboard-logo .logo1 img{
+    width: 64px;
+}
+
+.toggle-sidebar-btn{
+    font-size: 35px;
+    padding-left: 1rem;
+}

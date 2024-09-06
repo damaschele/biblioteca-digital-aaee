@@ -1,0 +1,194 @@
+/* .....................Google Fonts..................... */
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    transition: 0.4s ease-in-out;
+}
+
+:root {
+    --color-primary: #7a6930;
+    --color-black: #111111;
+    --color-black-Ex: #222222;
+    --color-dark: #7A7A7A;
+    --color-dark-Ex: #d4d1d1;
+    --color-light: #EFEEE8;
+
+    --color-bg-1: #F3F2EC;
+    --color-bg-2: #EDEBE4;
+
+    --font-family-prata: 'Prata', serif;
+    --font-family-Jakarta: "Roboto Condensed", sans-serif;
+    --transition: .4s ease;
+    max-width: 100%; 
+}
+
+html{
+    scroll-behavior: smooth;
+    color: var(--color-dark);
+    font-family: var(--font-family-Jakarta);
+    scroll-behavior: smooth;
+    transition: 0.4s ease-in-out;
+}
+body{
+    background: var(--color-bg-1);
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: var(--font-family-prata);
+    text-transform: capitalize;
+}
+
+h1{
+    font-size: 64px;
+    line-height: 90px;
+    color: var(--color-black-Ex)
+}
+
+h2{
+    font-size: 48px;
+    line-height: auto;
+    color: var(--color-black)
+}
+
+h3{
+    font-size: 28px;
+    line-height: auto;
+    color: var(--color-black)
+}
+
+.h3-ex{
+    font-size: 26 !important;
+}
+h4{
+    font-size: 22px;
+    line-height: auto;
+    color: var(--color-black)
+}
+h5{
+    font-size: 17px;
+    color: var(--color-black)
+}
+
+h5 span{
+    font-size: 18px;
+    color: var(--color-primary)
+}
+
+p{
+    font-size: 16px;
+    line-height: 220%;
+    letter-spacing: 4%;
+}
+small{
+    font-size: 13px;
+    letter-spacing: 16%;
+    color: var(--color-dark);
+}
+.btn{
+    display: inline-block;
+    inline-size: 100px auto;
+    color: var(--color-black);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    transition: var(--transition);
+    position: relative;
+    font-size: 25px;
+    border-radius: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn::after{
+    content: '';
+    inline-size: 0;
+    block-size: 100%;
+    background: var(--color-black-Ex);
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    z-index: -1;
+    transition: var(--transition);
+}
+
+.btn:hover::after{
+    inline-size: 100%;
+}
+.btn:hover{
+    color: var(--color-bg-1);
+}
+.btn-border{
+    border: 1px solid var(--color-dark);
+}
+button {
+    background: transparent;
+    border: none;
+}
+img{
+    inline-size: 100%;
+    object-fit: cover;
+}
+section{
+    padding: 180px 0 !important;
+}
+
+.container{
+    inline-size: 85%;
+    margin: 0 auto;
+    max-inline-size: 1420px;
+}
+
+table{
+    font-family: var(--font-family-Jakarta);
+  }
+
+/* .............................Responsividade 1024................... */
+@media (max-width: 1024px) {
+    h1{
+        font-size: 60px !important;
+    }
+    h2{
+        font-size: 38px !important;
+    }
+    h3{
+        font-size: 26px !important;
+    }
+    h5 span{
+        font-size: 16px !important;
+    }
+    section{
+        padding: 100px 0 !important;
+    } 
+}
+
+
+/* .............................Responsividade 600................... */
+@media (max-width: 600px) {
+    h1{
+        font-size: 40px !important;
+    }
+    h2{
+        font-size: 34px !important;
+    }
+    h3{
+        font-size: 24px !important;
+    }
+    h4{
+        font-size: 20px !important;
+    }
+    section{
+        padding: 70px 0 !important;
+    }
+}

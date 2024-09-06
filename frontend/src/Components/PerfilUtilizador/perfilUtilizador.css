@@ -1,0 +1,92 @@
+  .edit-form-user .form-control {
+    border: 1px solid #ccc;
+    border-radius: 0;
+  }
+  .edit-form .form-label {
+    font-weight: 600;
+    font-family: var(--font-family-Jakarta);
+  }
+  
+  .btn-danger {
+    block-size: 45px;
+    display: flex;
+    text-transform: capitalize;
+    align-self: center;
+    inline-size: auto;
+    border-radius: 0;
+  }
+
+  .btn-danger span{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    margin-inline-start: 5rem;
+  }
+
+  .btn-primary span{
+    margin-inline-start: 2rem;
+  }
+
+
+  .btn-primary {
+    display: flex;
+    border-radius: 0;
+    text-align: center;
+  }
+  
+  .user-info p {
+    font-size: 1.1rem;
+  }
+   
+.header-imag {
+  position: absolute;
+  inline-size: 100%;
+  inset-inline-start: 0;
+  block-size: 400px!important;
+  display: flex;
+}
+
+.header-imag img {
+  inline-size: 100%!important;
+  object-fit: cover;
+}
+
+.border-bottom {
+  z-index: 10;
+  display: flex;
+  position: absolute;
+  inset-inline-start: 0;
+}
+
+.px-md-4 {
+  background-color: #FFFFFF;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  inset-block-start: 25%;
+  block-size: 450px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding: 50px 20px!important;
+}
+
+.px-md-4 .edit-form-user {
+  display: flex;
+  justify-content: space-between;
+  inline-size: 600px;
+  margin-inline-start: 5rem;
+  margin-block-start: 100px;
+}
+
+.px-md-4 .edit-form-user .item-form {
+  border-radius: 0;
+  margin-inline-start: 10px;
+}
+
+.footer-content {
+
+  margin-top: 40rem;
+}

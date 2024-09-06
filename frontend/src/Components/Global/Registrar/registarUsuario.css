@@ -1,0 +1,198 @@
+/* Info Cards */
+
+.registrar{
+  font-family: var(--font-family-Jakarta);
+}
+.registrar .container-card{
+  display: flex;
+  inline-size: auto;
+  gap: 20px;
+  
+}
+
+.registrar .info-card {
+  padding-block-end: 10px;
+  inline-size: 420px;
+}
+
+.info-card h6 {
+  font-size: 28px;
+  color: #012970;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.card-icon {
+  font-size: 32px;
+  line-height: 0;
+  inline-size: 64px;
+  block-size: 64px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid;
+}
+
+.registrar .btn-card{
+  margin-inline-start: 2rem;
+  font-size: 20px;
+  font-weight: 400;
+  border: 1px solid #ccc;
+  padding: 4px;
+  inline-size: 100px;
+  margin-block-start: 4px;
+  color: #4e4d4d;
+}
+
+.cliente-card .btn-card:hover{
+  color: #4154f1;
+  background: #f6f6fe;
+  border: 1px solid #4154f1;
+}
+
+.cliente-card .card-icon {
+  color: #4154f1;
+  background: #f6f6fe;
+}
+
+.tabela-register {
+  inline-size: 100%;
+  margin-block-start: 15px;
+}
+
+.table {
+  inline-size: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  text-align: start;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background-color: #ddd;
+}
+
+.table .editar {
+  padding: 5px 8px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+
+.table .remover {
+  padding: 5px 8px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+
+tbody .acao{
+  display: flex;
+  gap: 10px;
+}
+
+.table .editar:hover {
+  background-color: #0056b3;
+}
+
+.table .remover:hover {
+  background-color: rgb(138, 22, 22);
+}
+
+.edit-form {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  block-size: auto;
+  inline-size: 450px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.edit-form input{
+  inline-size: 100%;
+  padding: 10px 10px;
+  margin: 10px 0;
+}
+
+.add-form {
+  position: absolute;
+  inset-block-start: 48%;
+  inset-inline-start: 45%;
+  block-size: auto;
+  inline-size: 450px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.add-form input{
+  inline-size: 100%;
+  padding: 10px 10px;
+  margin: 10px 0;
+}
+
+.close-icon {
+  position: absolute;
+  inset-block-start: 5px;
+  inset-inline-end: 8px;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 25px;
+}
+
+.close-icon:hover {
+  color: #333;
+}
+
+.edit-form .btn-alterar, .add-form .btn-adicionar {
+  padding: 10px;
+  inline-size: 100px;
+  block-size: 45px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 700;
+  align-items: center;
+  text-align: center;
+  margin-block-start: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.edit-form .btn-alterar:hover, .add-form .btn-adicionar:hover {
+  background-color: #6caef5;
+  color: white;
+}
+
+.message {
+  display: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  margin-block-start: 10px;
+  border-radius: 5px;
+}
+
+.message.show {
+  display: block;
+}

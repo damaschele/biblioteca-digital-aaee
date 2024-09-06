@@ -1,0 +1,24 @@
+/* styles.css */
+
+/* Estilos para o contêiner principal */
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  /* Estilos para o título 404 */
+  .not-found-title {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  /* Estilos para a mensagem de página não encontrada */
+  .not-found-message {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  

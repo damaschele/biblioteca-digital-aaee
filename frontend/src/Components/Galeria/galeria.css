@@ -1,0 +1,140 @@
+.container .filter_button{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#categoria{
+  margin-bottom: 50px;
+}
+
+.filter_button button {
+    height: 40px;
+    min-width: 100px;
+    border: 1px solid;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Prata', sans-serif;
+    display: inline-block;
+    width: 100px auto;
+    transition: var(--transition);
+    padding: 10px 10px;
+    text-transform: capitalize;
+    border-radius: 0;
+}
+
+button.active{
+    background: var(--color-black-Ex);
+    color: var(--color-bg-1);
+}
+
+.filterable_cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+
+.card {
+    flex-basis: 300px;
+    background-color: #FFFFFF;
+    padding: 3px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adicionando sombra */
+    max-height: 500px;
+    max-width: 250px;
+    height: 100%;
+    border-radius: 0;
+    font-family: var(--font-family-Jakarta);
+  }
+
+.card.hide{
+    display: none;
+  }
+
+.card img {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+.card_text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    line-height: 1.2em; 
+    font-size: 16px; 
+    margin-bottom: 5px;
+  }
+
+
+  .card_body{
+    padding: 15px 5px 5px;
+  }
+
+  .card_body h4 {
+    font-family: 'Prata', sans-serif;
+  }
+
+  .card_body button {
+    height: 40px;
+    min-width: 100px;
+    border: 1px solid;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Prata', sans-serif;
+    display: inline-block;
+    width: 100px auto;
+    transition: var(--transition);
+    padding: 10px 10px;
+    text-transform: capitalize;
+    border-radius: 0;
+}
+
+.card_body button a{
+    color: var(--color-black-Ex);
+    text-decoration: none;
+    font-family: var(--font-family-Jakarta);
+}
+
+.card_body button a:hover{
+    color: var(--color-bg-1);
+}
+
+.card_body button:hover{
+    background: var(--color-black-Ex);
+    color: var(--color-bg-1);
+}
+
+@media (max-width: 1024px) {
+    /* Alterações para telas com largura máxima de 1024 pixels */
+    .filter_button{
+        display: flex;
+        width: 100%;
+        font-size: 13px;
+        border: none;
+        gap: 3px!important;
+    }
+
+    .filter_button button{
+      display: flex;
+      font-size: 13px;
+      border: none;
+      margin-left: -5px;
+  }
+    .filterable_cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .card {
+      width: 240px;
+    }
+  }
+
+  

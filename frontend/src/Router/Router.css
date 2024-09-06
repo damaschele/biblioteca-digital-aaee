@@ -1,0 +1,15 @@
+/* CSS para transição suave entre rotas */
+.route-transition {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .route-transition-exit {
+    opacity: 1;
+  }
+  
+  .route-transition-exit-active {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  

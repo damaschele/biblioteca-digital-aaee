@@ -1,0 +1,75 @@
+/* solicitacoesLista.css */
+
+.solicitacoes-lista {
+    font-family: Arial, sans-serif;
+    max-inline-size: 600px;
+    margin: 0 auto;
+    padding: 0;
+    
+  }
+  
+  .solicitacoes-lista h2 {
+    font-size: 28px;
+    margin-block-end: 20px;
+    font-family: var(--font-family-Jakarta);
+  }
+  
+  .solicitacoes-lista ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: var(--font-family-Jakarta);
+    
+  }
+  
+  .solicitacoes-lista li {
+    background-color: #f9f9f9;
+    border-radius: 0;
+    padding: 15px;
+    margin-block-end: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .solicitacoes-lista li div {
+    margin-block-end: 10px;
+  }
+  
+  .solicitacoes-lista li strong {
+    font-weight: bold;
+  }
+
+  .solicitacoes-lista .buttons {
+    display: inline-flex;
+    gap: 10px!important;
+  }
+  
+  .solicitacoes-lista button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .solicitacoes-lista button:hover {
+    background-color: #0056b3;
+  }
+  
+  .solicitacoes-lista .ver-documento {
+    background-color: #28a745;
+  }
+  
+  .solicitacoes-lista .aprovar {
+    background-color: #17a2b8;
+  }
+
+  .solicitacoes-lista .rejeitar {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .solicitacoes-lista .icon {
+    margin-inline-end: 5px;
+  }
+  

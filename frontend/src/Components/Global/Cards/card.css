@@ -1,0 +1,87 @@
+/* Info Cards */
+
+.container-card{
+    display: flex;
+    inline-size: auto;
+    gap: 15px;
+    font-family: var(--font-family-Jakarta);
+}
+
+.info-card {
+    padding-block-end: 10px;
+    inline-size: 420px;
+}
+
+.info-card h6 {
+    font-size: 28px;
+    color: #012970;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.card-icon {
+    font-size: 32px;
+    line-height: 0;
+    inline-size: 64px;
+    block-size: 64px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid;
+}
+
+.btn-card{
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    padding: 4px;
+    inline-size: 100px;
+    margin-block-start: 4px;
+    color: #4e4d4d;
+}
+
+.cliente-card .btn-card:hover{
+    color: #4154f1;
+    background: #f6f6fe;
+    border: 1px solid #4154f1;
+}
+
+.cliente-card .card-icon {
+    color: #4154f1;
+    background: #f6f6fe;
+}
+
+.emprestimo-card .card-icon {
+    color: #2eca6a;
+    background: #f6f6fe;
+}
+
+.livros  .btn-card:hover{
+    color: #C9A177;
+    background: #f6f6fe;
+    border: 1px solid #C9A177;
+}
+
+.emprestimo-card  .btn-card:hover{
+    color: #2eca6a;
+    background: #f6f6fe;
+    border: 1px solid #2eca6a;
+}
+
+.livros .card-icon{
+    color: #C9A177;
+    background: #f6f6fe;
+}
+
+
+.solicitacoes-card .card-icon {
+    color: #ff771d;
+    background: #f6f6fe;
+}
+
+
+.solicitacoes-card  .btn-card:hover{
+    color: #ff771d;
+    background: #f6f6fe;
+    border: 1px solid #ff771d;
+}

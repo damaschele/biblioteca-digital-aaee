@@ -1,0 +1,21 @@
+
+
+.wrapper .carousel {
+  display: flex;
+  overflow: hidden;
+  gap: 10px;
+  grid-auto-columns: calc((100% / 4) - 12px);
+}
+
+.card_art{
+  width: 400px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  background: var(--color-bg-1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+

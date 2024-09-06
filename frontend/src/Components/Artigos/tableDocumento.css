@@ -1,0 +1,207 @@
+.text-center {
+    inline-size: 100%;
+}
+
+.text-center .input-group {
+    display: flex; 
+    block-size: 50px;
+}
+
+
+.close {
+    font-size: 35px;
+    margin-left: 13rem;
+}
+
+
+.modal-dialog {
+    border-radius: 0;
+}
+
+
+.text-center .input-group input {
+    block-size: 50px;
+    border-radius: 0;
+    flex-grow: 1; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-block-start: 28%;
+}
+
+
+.text-center .input-group .search-button:hover {
+    background-color: #495057;
+}
+
+.titulo-tabela {
+    color: #333;
+}
+
+.custom-table {
+    border: 1px solid #ddd;
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #ddd;
+}
+
+.custom-table th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.search-bar {
+    font-size: 16px;
+    inline-size: 400px;
+    padding: 15px 20px;
+    font-family: var(--font-family-Jakarta);
+    border: none; 
+}
+
+.search-bar:focus {
+    outline: none; 
+    border-color: #ddd; 
+}
+
+.search-bar::placeholder {
+    font-size: 20px; 
+}
+
+.no-results {
+    text-align: center;
+    margin-block-start: 20px;
+    color: red;
+}
+
+.text-center img {
+    inline-size: 124px;
+}
+
+.text-center .titulo-tabela {
+    margin: 15px;
+}
+
+.table-responsive {
+    inline-size: 100%;
+    margin-block-start: 480px;
+}
+
+/* Estilizar o imagem de fundo para Artigos */
+
+.container-image-bg {
+    position: absolute;
+    inline-size: 100%;
+    inset-inline-start: 0;
+    block-size: 480px;
+    text-align: center;
+}
+
+.container-image-bg img {
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}
+
+.container-image-bg .overlay {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.container-image-bg h3 {
+    position: absolute;
+    inset-block-start: 90px;
+    inset-inline-start: 240px;
+    color: #FFF;
+    text-transform: capitalize;
+}
+
+.container-image-bg p {
+    position: absolute;
+    inset-block-start: 160px;
+    inset-inline-start: 240px;
+    color: #FFF;
+    text-transform: capitalize;
+    font-size: 18px;
+    text-align: start;
+    font-family: var(--font-family-Jakarta);
+}
+
+footer {
+    margin-block-end: 20px;
+    font-family: var(--font-family-Jakarta);
+}
+
+/* Para largura de tela menor que 1024px */
+@media (max-width: 1024px) {
+    .text-center .input-group {
+        flex-direction: column; 
+    }
+
+    .text-center .input-group input {
+        margin-block-start: 10px; 
+    }
+
+    .container-image-bg h3,
+    .container-image-bg p {
+        inset-inline-start: 20px; 
+        font-size: 14px;
+    }
+
+    .container-image-bg p {
+        inset-block-start: 170px; 
+    }
+
+    .modal-header{
+        width: 100%!important;
+        display: flex;
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+        background-color: #FFFFFF;
+        top: 0;
+        left: 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    .modal-header .title-content {
+        display: flex;
+        width: 300px!important;
+        position: absolute;
+    }
+
+    .modal-header h5 {
+        font-size: 15px;
+    }
+
+    .modal-header .close {
+        margin-left: 20rem!important;
+        position: absolute;
+    }
+
+    .modal-body {
+        margin-top: 120px;
+    }
+}
+
+/* Para largura de tela menor que 678px */
+@media (max-width: 678px) {
+    .container-image-bg h3,
+    .container-image-bg p {
+        inset-inline-start: 10px; 
+    }
+
+    .container-image-bg p {
+        inset-block-start: 220px; 
+    }
+}

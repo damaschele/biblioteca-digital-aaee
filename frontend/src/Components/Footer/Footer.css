@@ -1,0 +1,160 @@
+/* Footer container */
+.footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: block;
+    align-items: center;
+  }
+
+  .footer_inf {
+    display: flex;
+  }
+  
+  /* Logo section */
+  .footer_logo {
+    text-align: center;
+    width: 400px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .footer_logo img {
+    width: 150px;
+  }
+  
+  .footer_logo h5 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .footer_logo p {
+    color: #666;
+    font-family: var(--font-family-Jakarta);
+  }
+  
+  /* Links section */
+  .footer_links {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+
+  }
+  
+  .footer_links h5 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .footer_links .nav-links {
+    list-style: none;
+    padding:0;
+    display: block;
+  }
+  
+  .footer_links .li {
+    margin-top: 10px;
+    font-size: 17px;
+    padding: 10px;
+    font-family: var(--font-family-Jakarta);
+  }
+  
+  .footer_links a {
+    color: #666;
+    text-decoration: none;
+    font-family: var(--font-family-Jakarta);
+  }
+  
+  .footer_links a:hover {
+    text-decoration: underline;
+  }
+
+  .footer_faq {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+
+  .footer_faq h5 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .footer_faq p{
+    font-size: 17px;
+    padding: 10px;
+    text-align: justify;
+    font-family: var(--font-family-Jakarta);
+    color: #333;
+  }
+
+  .footer_about svg {
+    margin-right: 5px;
+    vertical-align: middle;
+    font-size: 25px;
+  }
+  
+  /* Contact section */
+  .footer_contact {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    font-family: var(--font-family-Jakarta);
+  }
+  
+  .footer_contact h5 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .footer_contact span{
+    font-size: 17px;
+    padding: 10px;
+  }
+
+  .footer_contact svg {
+    margin-right: 5px;
+    vertical-align: middle;
+    font-size: 25px;
+  }
+  
+  /* Copyright section */
+  .footer_copy {
+    text-align: center;
+    font-family: var(--font-family-Jakarta);
+    font-size: 17px;
+  }
+  
+  .footer_copy hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    .footer{
+      flex-wrap: wrap;
+    }
+
+    .footer_inf{
+      flex-wrap: wrap;
+    }
+
+    .footer_links{
+      display: none;
+    }
+
+    .footer_logo, .footer_links,
+    .footer_contact, .footer_faq {
+        border: none;
+    }
+
+}
+  

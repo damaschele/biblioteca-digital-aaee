@@ -1,0 +1,21 @@
+.card-x {
+    margin-block-end: 20px;
+    border: 1px solid #ccc;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-x .card-body {
+    padding: 20px;
+}
+
+.card-x .card-title {
+    font-size: 20px;
+    color: #333;
+    margin-block-end: 15px;
+}
+
+.card-x .card-title span {
+    font-size: 14px;
+    color: #888;
+}

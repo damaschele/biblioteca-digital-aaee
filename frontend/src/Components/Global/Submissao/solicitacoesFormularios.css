@@ -1,0 +1,78 @@
+.solicitacao-formulario {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-block-start: 20px;
+  inline-size: 400px;
+}
+
+.solicitacao-formulario h4 {
+  margin-block-end: 10px;
+}
+
+.solicitacao-formulario p {
+  margin-block-end: 10px;
+}
+
+.solicitacao-formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+.solicitacao-formulario label {
+  margin-block-end: 10px;
+}
+
+.solicitacao-formulario .categoria {
+  display: flex;
+  flex-direction: column;
+  margin-block-end: -15px;
+}
+
+.solicitacao-formulario .categoria select{
+  height: 45px;
+  border: 1px solid #ccc!important;
+  border-radius: 5px;
+}
+
+.solicitacao-formulario input[type="text"],
+.solicitacao-formulario textarea,
+.solicitacao-formulario input[type="file"] {
+  inline-size: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-block-end: 10px;
+}
+
+.solicitacao-formulario button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.solicitacao-formulario button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.mensagem-sucesso {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-block-end: 10px;
+}
+
+.mensagem-erro {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-block-end: 10px;
+}

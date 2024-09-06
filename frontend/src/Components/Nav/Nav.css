@@ -1,0 +1,158 @@
+nav {
+    block-size: 100px;
+    display: grid;
+    place-items: center;
+    position: sticky;
+    inset-block-start: 0;
+    background: var(--color-bg-1);
+    z-index: 70;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adicionando sombra apenas na parte inferior */
+}
+
+.navShadow{
+    box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container .logo{
+    inline-size: 60px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a{
+    color: var(--color-dark);
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #C4942E;
+}
+
+.nav-links .active{
+    color: var(--color-primary);
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-right a{
+    color: var(--color-dark);
+    font-size: 17px;
+}
+
+.menu-button{
+    display: none;
+}
+
+/* ...................................Media Screen(1024px).................................... */
+@media (max-width: 1024px){
+    .nav{
+        block-size: 90px;
+    }
+    .nav-container{
+        position: relative;
+        block-size: 100%;
+    }
+    .nav-container .logo{
+        inline-size: 50px;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 0;
+        inline-size: 20rem;
+        transition: var(--transition);
+        inset-block-start: 100px;
+        inset-inline-end: 0;
+        position: fixed;
+        perspective: 400px;
+    }
+
+    .nav-links li {
+        block-size: 100%;
+        inline-size: 100%;
+        align-items: center;
+        animation: navAni 600ms forwards ease;
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+    .nav-links a{
+        display: inline-block;
+        background: var(--color-bg-1);
+        block-size: 80px;
+        inline-size: 100%;
+        display: flex;
+        padding-inline-start: 40px;
+        align-items: center !important;
+        overflow: hidden;
+        box-shadow: -1rem 3rem 3rem rgba(0, 0, 0, 0.1);
+    }
+
+/*........................NavLinksAnimation....................... */
+    @keyframes navAni {
+        to{
+            transform: rotateY(0);
+            opacity: 1;
+        }
+    }
+
+    .nav-links li:nth-child(2){
+        animation-delay: 200ms;
+    }
+    .nav-links li:nth-child(3){
+        animation-delay: 400ms;
+    }
+    .nav-links li:nth-child(4){
+        animation-delay: 600ms;
+    }
+    .nav-links li:nth-child(5){
+        animation-delay: 800ms;
+    }
+    .nav-links li:nth-child(6){
+        animation-delay: 1000ms;
+    }
+    .nav-links li:nth-child(7){
+        animation-delay: 1200ms;
+    }
+
+    .menu-button {
+        display: inline-block;
+        color: var(--color-dark);
+        font-size: 25px;
+    }
+
+
+    /* ................isNavLinksShowing and hideingMenu ............................ */
+    .navinksShow{
+        display: flex;
+    }
+    .navLinksHide{
+        display: none;
+    }
+}
+
+/* ...................................Media Screen(600px).................................... */
+@media (max-width: 600px){
+    .nav-links {
+        inline-size: 18rem;
+    }
+    .nav-right{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}

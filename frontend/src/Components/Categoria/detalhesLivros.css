@@ -1,0 +1,25 @@
+.img-fluid {
+    max-width: 80%; /* Reduz o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo da imagem */
+  }
+  
+  h2 {
+    font-size: 2rem; /* Aumenta o tamanho do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+  }
+  
+  p {
+    font-size: 1.2rem;
+    font-family: var(--font-family-Jakarta);
+  }
+  
+  .btn-lg {
+    padding: 10px!important; 
+    font-size: 1rem!important; 
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  

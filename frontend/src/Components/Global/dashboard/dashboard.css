@@ -1,0 +1,22 @@
+.dashboard {
+    display: flex;
+}
+
+.dashboard .poit{
+    margin-block-start: -12%;
+}
+
+.dashboard .col-12{
+    margin-block-start: 10px;
+}
+
+.col-lg-4 .user{
+    margin-block-end: 10px;
+}
+
+@media (max-inline-size: 1024px) {
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+    } 
+}

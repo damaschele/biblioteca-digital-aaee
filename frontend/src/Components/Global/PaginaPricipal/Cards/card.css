@@ -1,0 +1,221 @@
+/* Info Cards */
+
+.container-card{
+    display: flex;
+    inline-size: auto;
+    gap: 20px;
+    font-family: var(--font-family-Jakarta);
+}
+
+.info-card {
+    padding-block-end: 10px;
+    inline-size: 420px;
+}
+
+.info-card h6 {
+    font-size: 28px;
+    color: #012970;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.card-icon {
+    font-size: 32px;
+    line-height: 0;
+    inline-size: 64px;
+    block-size: 64px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid;
+}
+
+.btn-card{
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    padding: 4px;
+    inline-size: 100px;
+    margin-block-start: 4px;
+    color: #4e4d4d;
+}
+
+.cliente-card .btn-card:hover{
+    color: #4154f1;
+    background: #f6f6fe;
+    border: 1px solid #4154f1;
+}
+
+.cliente-card .card-icon {
+    color: #4154f1;
+    background: #f6f6fe;
+}
+
+.emprestimo-card .card-icon {
+    color: #2eca6a;
+    background: #f6f6fe;
+}
+
+.livros  .btn-card:hover{
+    color: #C9A177;
+    background: #f6f6fe;
+    border: 1px solid #C9A177;
+}
+
+.emprestimo-card  .btn-card:hover{
+    color: #2eca6a;
+    background: #f6f6fe;
+    border: 1px solid #2eca6a;
+}
+
+.livros .card-icon{
+    color: #C9A177;
+    background: #f6f6fe;
+}
+
+
+.solicitacoes-card .card-icon {
+    color: #ff771d;
+    background: #f6f6fe;
+}
+
+
+.solicitacoes-card  .btn-card:hover{
+    color: #ff771d;
+    background: #f6f6fe;
+    border: 1px solid #ff771d;
+}
+
+/* card.css */
+
+.overlay {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .formulario-cadastro {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    inline-size: 800px;
+  }
+  
+  .fechar-formulario {
+    position: absolute;
+    inset-block-start: 10px;
+    inset-inline-end: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 35px;
+    color: #012970;
+  }
+  
+  .fechar-formulario:hover {
+    color: #666;
+  }
+
+form .btn-primary {
+    inline-size: 160px;
+    block-size: 45px;
+    font-size: 17px;
+    font-family: var(--font-family-Jakarta);
+}
+  
+.formulario-cadastro {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .overlay {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .error-message, .success-message {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+  
+  .success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+  
+  /* Estilizacao de tabela de Livros */
+  .livros-tabela{
+    font-family: var(--font-family-Jakarta);
+    margin-block-start: 20px;
+  }
+
+  tbody .image{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+  }
+
+  tbody td img {
+    inline-size: 50px;
+  }
+
+  tbody td {
+    background: transparent!important;
+  }
+
+  tbody td button {
+    display: flex;
+    align-items: center;
+    block-size: 30px;
+    inline-size: auto;
+    padding: 0 10px;
+    border-radius: 0;
+  }
+
+  tbody td .btn-warning,tbody td .btn-danger{
+    border-radius: 0;
+  }
+
+  tbody td .btn-warning span {
+    font-size: 13px;
+    margin-inline-start: 0;
+  }
+
+  tbody td .btn-danger span {
+    font-size: 13px;
+    margin-inline-start: 0;
+  }

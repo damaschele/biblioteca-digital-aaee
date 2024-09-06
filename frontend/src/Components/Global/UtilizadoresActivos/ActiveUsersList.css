@@ -1,0 +1,35 @@
+.active-users-list {
+    padding: 20px;
+    max-inline-size: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .active-users-list h4 {
+    font-family: var(--font-family-Jakarta);
+    font-weight: 700;
+  }
+  
+  .active-users-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .active-users-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-block-end: 1px solid #ddd;
+  }
+  
+  .active-dot {
+    block-size: 10px;
+    inline-size: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    margin-inline-end: 10px;
+  }
+  

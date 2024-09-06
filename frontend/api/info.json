@@ -1,0 +1,114 @@
+{
+    "cards": [
+        {
+            "_id": 1,
+            "name": "Clientes",
+            "icon": "bi bi-person",
+            "amount": 145,
+            "percentage": 0.12,
+            "active": true
+        },
+        {
+            "_id": 2,
+            "name": "Solicitações",
+            "icon": "bi bi-file-text",
+            "amount": 145,
+            "percentage": 0.11,
+            "active": true
+        },
+        {
+            "_id": 3,
+            "name": "Empréstimos",
+            "icon": "bi bi-cash",
+            "amount": 145,
+            "percentage": 0.09,
+            "active": true
+        }
+    ],
+    "recentClients": [
+        {
+            "_id": 1,
+            "number": "#2457",
+            "customer": "Brandon Jacob",
+            "phone": 840001123,
+            "price": 10000,
+            "status": "Aproved"
+        },
+        {
+            "_id": 2,
+            "number": "#2447",
+            "customer": "Bridie Kessler",
+            "phone": 840001123,
+            "price": 20000,
+            "status": "Pending"
+        },
+        {
+            "_id": 3,
+            "number": "#2449",
+            "customer": "Ashleigh Langosh",
+            "phone": 840001123,
+            "price": 30000,
+            "status": "Rejected"
+        },
+        {
+            "_id": 4,
+            "number": "#2444",
+            "customer": "Angus grady",
+            "phone": 840001123,
+            "price": 100000,
+            "status": "Aproved"
+        },
+        {
+            "_id": 5,
+            "number": "#3592",
+            "customer": "Rahee Lehner",
+            "phone": 840001123,
+            "price": 200000,
+            "status": "Rejected"
+        }
+    ],
+    "recentActivity": [
+        {
+            "_id": 1,
+            "time": "32 min",
+            "color": "text-success",
+            "content": "Quia quea rerum explicabe officiis beatae",
+            "highlight": "explicabe officiis"
+        },
+        {
+            "_id": 2,
+            "time": "56 min",
+            "color": "text-danger",
+            "content": "Vuluptatem blanditiis blanditiis eveniet",
+            "highlight": ""
+        },
+        {
+            "_id": 3,
+            "time": "2 hrs",
+            "color": "text-primary",
+            "content": "Voluptates corrupti molestias voluptatem",
+            "highlight": ""
+        },
+        {
+            "_id": 4,
+            "time": "1 day",
+            "color": "text-info",
+            "content": "Tempore autem saepe occaecati voluptatem tempore",
+            "highlight": "occaecati voluptatem"
+        },
+        {
+            "_id": 5,
+            "time": "2 day",
+            "color": "text-warning",
+            "content": "Est sit eum reiciendis exercitationem",
+            "highlight": ""
+        },
+        {
+            "_id": 6,
+            "time": "4 weeks",
+            "color": "text-muted",
+            "content": "Dicta dolorem harum nulla eius. Ut quidem quidem sit quas",
+            "highlight": ""
+        }
+    ]
+}

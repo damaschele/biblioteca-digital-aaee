@@ -1,0 +1,140 @@
+header{
+    width: 100%;
+    overflow: hidden;
+}
+
+.header-container{
+    max-width: 1880px !important;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 180px 0;
+}
+
+.header-shape{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header-wrapper{
+    display: grid;
+    grid-template-columns: auto 395px;
+    align-items: center;
+    gap: 160px;
+    margin: 0 auto;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.header-left {
+    margin-left: 5rem;
+}
+
+.header-right {
+    margin-right: 5rem;
+}
+
+.header-left p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: var(--font-family-Jakarta);
+}
+
+.slider-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    top: -2rem;
+    width: 100%;
+}
+
+.slidebutton{
+    display: inline-block;
+    font-size: 16px;
+    color: var(--color-dark);
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    border: 1px solid var(--color-dark-Ex);
+    z-index: 10;
+    transition: var(--transitions);
+}
+
+.slidebutton:hover{
+    background: var(--color-dark-Ex);
+}
+
+.btn-border {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+}
+
+@media (max-width: 1024px) {
+   
+    .header-container {
+        flex-direction: column;
+        margin-top: -10rem;
+        width: 100%;
+    }
+
+    .header-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        align-self: center;
+
+    }
+    .header-left h2 {
+        font-size: 15px!important;
+    }
+
+    .header-left p {
+        font-size: 11px;
+    }
+
+    .mySwiper {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .header-wrapper {
+        flex-direction: column-reverse;
+        align-self: center;
+    }
+
+    .header-right {
+        width: 100%;
+        margin-left: 5rem;
+        align-self: center;
+        padding: 50px;
+    }
+
+    .header-left {
+        margin: -12rem -5px 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-left p {
+        text-align: center;
+    }
+}
+
+

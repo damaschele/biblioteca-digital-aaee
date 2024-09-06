@@ -1,0 +1,79 @@
+.my-calendar {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .my-calendar .rbc-calendar {
+    flex: 1;
+  }
+  
+  .my-calendar .rbc-month-view {
+    block-size: 100%;
+  }
+  
+  .my-calendar .rbc-month-view .rbc-row-content {
+    block-size: calc(100% - 2.5em);
+  }
+  
+  .my-calendar .rbc-event {
+    background-color: #1976d2;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 4px;
+    color: #fff;
+    font-size: 0.9em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .my-calendar .rbc-event:hover {
+    background-color: #155fa0;
+  }
+  
+  .my-calendar .rbc-today {
+    background-color: rgba(25, 118, 210, 0.1);
+  }
+  
+  .my-calendar .rbc-toolbar {
+    background-color: #f5f5f5;
+    border-block-end: 1px solid #ddd;
+  }
+  
+  .my-calendar .rbc-toolbar button {
+    background-color: transparent;
+    color: #333;
+    font-size: 0.9em;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .my-calendar .rbc-toolbar button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .my-calendar .rbc-toolbar button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .my-calendar .rbc-toolbar button.rbc-active {
+    background-color: #1976d2;
+    color: #fff;
+  }
+  
+  .my-calendar .rbc-toolbar button:active {
+    background-color: #1565c0;
+  }
+  
+  .my-calendar .rbc-toolbar button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  

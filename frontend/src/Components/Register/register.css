@@ -1,0 +1,134 @@
+.container_register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register{
+    display: flex;
+    max-width: 90rem;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: var(--color-bg-2);
+    padding: 20px;
+    margin-top: 10%;
+}
+
+.login_imag{
+    width: 50%;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+.login_imag img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.register-container{
+    margin-left: 2rem;
+    width: 100%;
+}
+.register-container form{
+  display: flex;
+  justify-content: space-between!important;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+form .form-content {
+  width: 50%;
+}
+
+form .form-group label{
+    font-size: 17px;
+}
+
+form .form-group input{
+    height: 50px;
+    background: none;
+    border-radius: 35px;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+    font-size: 17px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  
+  .label-text {
+    font-size: 14px;
+  }
+  
+  .register-container .register-link {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: right;
+  }
+  
+  .register-link a {
+    color: #009688;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+
+  .register-container .form-group .button{
+    background: #C2986B;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 2rem;
+    padding: 10px;
+    border: none;
+  }
+
+  form .button:hover{
+    background: #C4942E;
+  }
+
+  @media (max-width: 1024px) {
+    .login{
+      box-shadow: none;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .login .login_imag{
+      border: none;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .login .login_imag img{
+      width: 124px;
+    }
+
+    .login .login-container{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .login-container form .form-group{
+      padding: 10px 0;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+

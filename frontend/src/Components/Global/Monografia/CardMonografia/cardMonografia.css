@@ -1,0 +1,6 @@
+.container-card{
+    display: flex;
+    inline-size: auto;
+    gap: 15px;
+    font-family: var(--font-family-Jakarta);
+}

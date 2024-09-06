@@ -1,0 +1,129 @@
+.row .col-md-3{
+    position: 'sticky';
+    inset-block-start: '70px';
+    max-block-size: auto;
+    overflow-y: scroll;
+}
+
+
+/* categoria.css */
+
+/* Estilo para a lista de categorias */
+.list-group-item {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    background-color: #f8f9fa; /* Cor de fundo padrão */
+    border: none;
+    border-radius: 0;
+    margin-bottom: 5px;
+    font-family: var(--font-family-Jakarta);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Efeito de hover */
+  .list-group-item:hover {
+    background-color: #e2e6ea;
+    transform: translateX(5px); /* Move levemente para a direita */
+    font-family: var(--font-family-Jakarta);
+  }
+  
+  /* Estilo para o item ativo */
+  .list-group-item.active {
+    background-color: #007bff; /* Cor de fundo ativa */
+    color: white; /* Cor do texto quando ativo */
+  }
+  
+  /* Estilo para a lista de subcategorias */
+  .list-group-item ul {
+    padding-left: 20px; /* Indentação para subcategorias */
+  }
+  
+  .list-group-item ul .list-group-item {
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #e9ecef;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  .list-group-item ul .list-group-item:hover {
+    background-color: #dee2e6;
+  }
+  
+  .list-group-item ul .list-group-item.active {
+    background-color: #0056b3; /* Cor de fundo ativa para subcategoria */
+    color: white;
+  }
+  
+  /* Estilo para o título da categoria */
+  h3.mb-4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #343a40;
+  }
+  
+
+.row .col-md-3 .list-group span{
+    font-size: 24px;
+    padding: 15px;
+    margin-block-end: 40px;
+}
+
+
+.col-md-9 .row .mb-4 .card{
+    max-block-size: 470px;
+    block-size: 100%;
+    padding: 5px;
+    font-family: var(--font-family-Jakarta);
+}
+
+.col-md-9 .row .mb-4 .card .card-body{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 2px;
+    block-size: 20%;
+}
+
+.col-md-9 .row .mb-4 .card .card-body h5{
+    font-size: 15px;
+    font-weight: 600;
+    margin-block-start: 4px;
+}
+.col-md-9 .row .mb-4 .card .card-body .btn-primary{
+    inline-size: 140px;
+    block-size: 40px;
+    font-size: 15px;
+    border-radius: 0;
+    text-align: center;
+}
+
+.btn-cat {
+    width: 140px!important;
+    height: 40px!important;
+    font-size: 16px!important;
+}
+
+
+.col-md-9 .row .mb-4 .card .card-img{
+    block-size: 50%;
+    inline-size: auto;
+}
+
+.col-md-9 .row .mb-4 .card .card-img .card-img-top{
+    inline-size: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .lista-livros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+    }
+
+    .lista-livros .mb-4 {
+        display: flex;
+        justify-content: center;
+    }
+    
+}

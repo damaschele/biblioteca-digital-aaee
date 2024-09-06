@@ -1,0 +1,16 @@
+.table{
+    box-shadow: 0 0 10px rgba(3, 3, 3, 0.2);
+}
+
+.acao button {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    justify-content: center!important;
+}
+
+select {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}

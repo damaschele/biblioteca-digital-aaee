@@ -1,0 +1,19 @@
+.header {
+    transition: all 0.5s;
+    z-index: 997;
+    height: 100px;
+    padding-left: 20px;
+    background: var(--color-bg-1);
+}
+
+.header .toggle-sidebar-btn {
+    font-size: 32px;
+    padding-left: 10px;
+    cursor: pointer;
+    color: #012970;
+}
+
+.dropdown{
+    position: relative;
+    z-index: 1000;
+}
